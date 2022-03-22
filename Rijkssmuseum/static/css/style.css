@@ -55,13 +55,31 @@ article{
     opacity: 0;
     transform:scale(0.75) rotate(-10deg);
     transition:.25s.25s;
-    transform-origin:0 0
+    transform-origin:0 0;
+
   }
 
 article.observed {
     opacity: 1;
     transform:scale(1) rotate(0);
+    width: 100%;
   }
+
+  a{
+      width: 50%;
+      text-decoration: none;
+      color: white;
+  }
+
+  .terug{
+      width: 100%;
+      font-size: 2em;
+      color: white;
+      margin: 1em;
+  }
+  .terug:hover{
+    color: rgb(180, 180, 180);
+}
 
 article:last-of-type{
     margin-bottom: 4em;

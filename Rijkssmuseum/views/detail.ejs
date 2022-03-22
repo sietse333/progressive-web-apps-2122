@@ -1,0 +1,26 @@
+<%- include('./partial/head') -%>
+
+<body>
+    <main>
+        <h1>Detail page</h1>
+
+        <section id="section">
+            <% 
+            data.map((kunst) => {
+                const img = kunst.webImage.url.slice(0, -3) + "=s1000"
+            %>
+            <article class="observed">
+                <h2><%= kunst.title %></h2>
+                <img src=" <%= kunst.webImage.url %>">
+            </article>
+            <a class="terug" href="../">Terug naar lijst</a>  
+            // DIT WERKT NOG NIET
+            <% }) %>
+        </section>
+    </main>
+    <footer>
+        <h3 id="empty"></h3>
+    </footer>
+</body>
+
+<%- include('./partial/foot.ejs') -%>

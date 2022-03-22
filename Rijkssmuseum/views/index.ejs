@@ -1,18 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Noderijks</title>
-    <script type="module" src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-</head>
+<%- include('./partial/head') -%>
+
 <body>
     <main>
         <h1>Discover Rijksmuseum</h1>
         <p>Art from the comfort of your own home</p>
         <input id="searchbalk" type="text" placeholder="Search for different artists or painters...">
         <p id="searchError"></p>
-        <section id="section"></section>
+        <section id="section">
+
+            <% 
+            data.map((kunst) => {
+                const img = kunst.webImage.url.slice(0, -3) + "=s1000"
+            %>
+            <a href="kunst/<%= kunst.id %>">
+                <article class="observed">
+                    <h2><%= kunst.title %></h2>
+                    <img src=" <%= kunst.webImage.url %>">
+                </article>
+            </a>
+
+            <% 
+            }) 
+            %>
+
+        </section>
         <button id="moreButton">Load more!</button>
     </main>
     <footer>
@@ -20,4 +31,7 @@
     </footer>
 </body>
 
-</html>
+<%- include('./partial/foot.ejs') -%>
+
+
+// article had class="hallo" voor de slide ins
