@@ -4,7 +4,12 @@
     <main>
         <h1>Discover Rijksmuseum</h1>
         <p>Art from the comfort of your own home</p>
-        <input id="searchbalk" type="text" placeholder="Search for different artists or painters...">
+        
+        <form method="get" action="/search" class="search-form" data-search-form>
+            <label for="search" placeholder="Search for different paintings or artists"></label>
+            <input type="search" id="search" name="query" class="search-form__input" data-search-input/>
+        </form>
+
         <p id="searchError"></p>
         <section id="section">
 
@@ -12,7 +17,7 @@
             data.map((kunst) => {
                 const img = kunst.webImage.url.slice(0, -3) + "=s1000"
             %>
-            <a href="kunst/<%= kunst.id %>">
+            <a href="kunst/<%= kunst.id.substring(3) %>">
                 <article class="observed">
                     <h2><%= kunst.title %></h2>
                     <img src=" <%= kunst.webImage.url %>">

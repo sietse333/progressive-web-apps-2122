@@ -76,6 +76,7 @@ article.observed {
       font-size: 2em;
       color: white;
       margin: 1em;
+      margin-bottom: 5em;
   }
   .terug:hover{
     color: rgb(180, 180, 180);

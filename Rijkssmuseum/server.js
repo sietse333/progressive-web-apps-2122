@@ -23,7 +23,7 @@ app.use(express.static('static'));
 
 // Create a home route
 app.get('/', (req, res) => {
-  fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}`)
+  fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&imgonly=true`)
     .then(async response => {
       const artWorks = await response.json()
       res.render('index', {
@@ -36,19 +36,41 @@ app.get('/', (req, res) => {
 
 
 // detail page
-app.get('/kunst/:id', (req, res) => {
-  fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}`)
+app.get('/kunst/:id', function (req, res) {
+  fetch(`https://www.rijksmuseum.nl/api/nl/collection/${req.params.id}?key=${API_KEY}`)
       .then(async response => {
+          console.log(response);
           const artWorks = await response.json()
-          const result = artWorks.artObjects.filter((item) => item.id === req.params.id)
           res.render('detail', {
-              pageTitle: `Kunstwerk: ${req.params.id}`,
-              data: result
-          })
+              pageTitle: 'Art Museum' + req.params.id,
+              kunst: artWorks.artObject
+          });
       })
       .catch(err => res.send(err))
 })
 
+
+
+// Search action
+app.get('/search', (req, res) => {
+  fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&q=${req.query.query}&imgonly=true`)
+    .then(async response => {
+      const artWorks = await response.json()
+      res.render('index', {
+        title: 'Art Museum',
+        data: artWorks.artObjects,
+      });
+    })
+    .catch(err => res.send(err))
+})
+
+// offline action
+app.get('/offline', (req, res) => {
+  res.render('offline', {
+    title: 'Art Museum',
+    
+  });
+})
 
 
 app.listen(port, () => {

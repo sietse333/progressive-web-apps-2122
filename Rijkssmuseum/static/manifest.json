@@ -1,0 +1,18 @@
+{
+    "short_name": "Rijks",
+    "name": "Rijksmuseum art",
+    "icons": [
+      {
+        "src": "/img/smiley.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "rgba(211, 211, 211, 0.6)",
+    "description": "Rijksmuseum art"
+  
+  }
