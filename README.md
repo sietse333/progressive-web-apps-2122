@@ -10,6 +10,8 @@ As an art lover, I want to be able to search and view art from the Rijksmuseum a
 
 ![homescreen](https://user-images.githubusercontent.com/43068118/157267609-a4a87824-a5ac-4b62-ab5f-66203afd5096.png)
 
+![offline](https://user-images.githubusercontent.com/43068118/161515230-cf140d80-1b45-43c8-8894-11cf9a83262e.png)
+
 
 **How to instal**
 
