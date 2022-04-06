@@ -4,9 +4,19 @@ const request = require('request');
 const app = express()
 const port = 3000
 const fetch = require('node-fetch')
+const compression = require('compression')
+const minify = require('express-minify');
+
+
+let setCache = function (req, res, next) {
+  // here you can define period in second, this one is 5 minutes
+const period = 60 * 5 
 
 require('dotenv').config({path: '.env'})
 
+// minify aanzetten
+app.use(minify());
+app.use(express.static(__dirname + '/static'));
 
 const {
   API_KEY
@@ -73,7 +83,32 @@ app.get('/offline', (req, res) => {
 })
 
 
+// you only want to cache for GET requests
+if (req.method == 'GET') {
+  res.set('Cache-control', `public, max-age=${period}`)
+} else {
+  // for the other requests set strict no caching parameters
+  res.set('Cache-control', `no-store`)
+}
+
+// remember to call next() to pass on the request
+next()
+}
+
+// now call the new middleware function in your app
+
+app.use(setCache)
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
+
+
+
+
+
+
+
+  

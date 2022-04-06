@@ -5,8 +5,6 @@ const CORE_ASSETS = [
   'manifest.json'
 ]
 
-
-
 self.addEventListener('install', event => {
   console.log('installing')
 

@@ -1,16 +1,14 @@
 <%- include('./partial/head') -%>
-
 <body>
     <main>
         <h1>Detail page</h1>
-
         <section id="section">
             <% const img = kunst.webImage.url.slice(0, -3) + "=s1000" %>
             <article class="observed">
                 <h2><%= kunst.title %></h2>
-                <img src=" <%= img %>">
+                <img src=" <%= img %>" alt="gedetaileerd kunststuk">
             </article>
-            <a class="terug" href="../">Home</a> 
+            <a class="terug" href="/">Home</a> 
 
 
         </section>
@@ -19,5 +17,4 @@
         <h3 id="empty"></h3>
     </footer>
 </body>
-
 <%- include('./partial/foot.ejs') -%>
