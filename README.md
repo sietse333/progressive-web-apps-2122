@@ -15,6 +15,15 @@ As an art lover, I want to be able to search and view art from the Rijksmuseum a
 
 **How to instal**
 
+To run this program you need node en npm installed.
+
+To run this project locally you can clone it from this github. Run the code on a local server otherwise the modules wont work
+
+Now type in npm install in the terminal to install all the packages.
+
+Change the API key to your own. You can request one from the Rijksmuseum website.
+
+Run the application on localhost:3000 with npm run dev
 
 
 
@@ -24,9 +33,14 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 
 **Activity diagram**
 
+![wireflows rembrand2e](https://user-images.githubusercontent.com/43068118/161923952-ce472945-de57-4f68-8512-34d68049c34e.jpg)
 
 
 
 **Wishlist**
 
+- Adding better error states and loading state
+- Improving images.
+- Adding more of my old javascript modules
+- Better overal styling on my page
 
