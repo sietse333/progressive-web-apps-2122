@@ -55,4 +55,3 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 - Docenten
 - Klasgenoten
 
-https://dev.to/codewithtee/server-side-rendering-ssr-vs-client-side-rendering-csr-3m24
