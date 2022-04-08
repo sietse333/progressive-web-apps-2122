@@ -25,7 +25,8 @@ Change the API key to your own. You can request one from the Rijksmuseum website
 
 Run the application on localhost:3000 with npm run dev
 
-
+**Running as a web app**
+You can also run this project as a web application. In chrome in your searchbar there is a icon that starts the project as a webapp.
 
 **External data source?**
 
