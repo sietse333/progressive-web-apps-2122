@@ -17,7 +17,7 @@ To run this program you need node en npm installed.
 
 To run this project locally you can clone it from this github. Run the code on a local server otherwise the modules wont work
 
-Type cd rijksmuseum in the terminal 
+Type cd rijkssmuseum in the terminal. (note the Rijkssmuseum with double ss)
 
 Now type in npm install in the terminal to install all the packages.
 
