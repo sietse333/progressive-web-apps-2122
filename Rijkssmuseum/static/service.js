@@ -22,38 +22,24 @@ self.addEventListener('activate', () => {
 self.addEventListener('fetch', (event) => {
   console.log('Fetch event: ', event.request.url);
   if (isCoreGetRequest(event.request)) {
-      console.log('Core get request: ', event.request.url);
-      // cache only strategy
-      event.respondWith(
-          caches.open(CORE_CACHE_VERSION)
-          .then(cache => cache.match(event.request.url))
-      )
+    console.log('Core get request: ', event.request.url);
+    // cache only strategy
+    event.respondWith(
+      caches.open(CORE_CACHE_VERSION)
+        .then(cache => cache.match(event.request.url))
+    )
   } else if (isHtmlGetRequest(event.request)) {
-      console.log('html get request', event.request.url)
-      // generic fallback
-      event.respondWith(
-
-          caches.open('html-cache')
-          .then(cache => cache.match(event.request.url))
-          .then(response => response ? response : fetchAndCache(event.request, 'html-cache'))
-          .catch(e => {
-              return caches.open(CORE_CACHE_VERSION)
-                  .then(cache => cache.match('/offline'))
-          })
-      )
-  } else if (isCSSGetRequest(event.request)) {
-      console.log('css get request', event.request.url)
-      // generic fallback
-      event.respondWith(
-
-          caches.open('css-cache')
-          .then(cache => cache.match(event.request.url))
-          .then(response => response ? response : fetchAndCache(event.request, 'css-cache'))
-          .catch(e => {
-              return caches.open(CORE_CACHE_VERSION)
-                  .then(cache => cache.match('/offline'))
-          })
-      )
+    console.log('html get request', event.request.url)
+    // generic fallback
+    event.respondWith(
+      caches.open('html-cache')
+        .then(cache => cache.match(event.request.url))
+        .then(response => response ? response : fetchAndCache(event.request, 'html-cache'))
+        .catch(e => {
+          return caches.open(CORE_CACHE_VERSION)
+            .then(cache => cache.match('/offline'))
+        })
+    )
   }
 })
 
@@ -78,16 +64,6 @@ function fetchAndCache(request, cacheName) {
 */
 function isHtmlGetRequest(request) {
   return request.method === 'GET' && (request.headers.get('accept') !== null && request.headers.get('accept').indexOf('text/html') > -1);
-}
-
-/**
-* Checks if a request is a GET and HTML request
-*
-* @param {Object} request        The request object
-* @returns {Boolean}            Boolean value indicating whether the request is a GET and HTML request
-*/
-function isCSSGetRequest(request) {
-  return request.method === 'GET' && (request.headers.get('accept') !== null && request.headers.get('accept').indexOf('text/css') > -1);
 }
 
 /**

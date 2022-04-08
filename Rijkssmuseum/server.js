@@ -1,4 +1,3 @@
-
 const express = require("express")
 const request = require('request');
 const app = express()
@@ -8,7 +7,7 @@ const compression = require('compression')
 const minify = require('express-minify');
 
 
-let setCache = function (req, res, next) {
+let setCache = (req, res, next) => {
   // here you can define period in second, this one is 5 minutes
 const period = 60 * 5 
 
@@ -46,7 +45,7 @@ app.get('/', (req, res) => {
 
 
 // detail page
-app.get('/kunst/:id', function (req, res) {
+app.get('/kunst/:id', (req, res) => {
   fetch(`https://www.rijksmuseum.nl/api/nl/collection/${req.params.id}?key=${API_KEY}`)
       .then(async response => {
           console.log(response);
@@ -59,11 +58,9 @@ app.get('/kunst/:id', function (req, res) {
       .catch(err => res.send(err))
 })
 
-
-
 // Search action
 app.get('/search', (req, res) => {
-  fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&q=${req.query.query}&imgonly=true`)
+  fetch(`https://www.rijksmuseum.nl/api/nl/collection?key=${API_KEY}&q=${req.query.searchbalk}&imgonly=true`)
     .then(async response => {
       const artWorks = await response.json()
       res.render('index', {
@@ -78,7 +75,6 @@ app.get('/search', (req, res) => {
 app.get('/offline', (req, res) => {
   res.render('offline', {
     title: 'Art Museum',
-    
   });
 })
 
