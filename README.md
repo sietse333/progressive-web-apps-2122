@@ -33,7 +33,8 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 
 **Activity diagram**
 
-![wireflows rembrand2e](https://user-images.githubusercontent.com/43068118/161923952-ce472945-de57-4f68-8512-34d68049c34e.jpg)
+![wirelaatste](https://user-images.githubusercontent.com/43068118/162408292-13383a78-3f94-4154-b511-0e1acb327be1.jpg)
+
 
 
 
