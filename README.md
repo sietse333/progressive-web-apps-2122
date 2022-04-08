@@ -38,8 +38,6 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 ![wirelaatste](https://user-images.githubusercontent.com/43068118/162408292-13383a78-3f94-4154-b511-0e1acb327be1.jpg)
 
 
-
-
 **Wishlist**
 
 - Adding better error states and loading state
@@ -47,3 +45,15 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 - Adding more of my old javascript modules
 - Better overal styling on my page
 
+
+**Resources**
+- https://www.w3schools.com/
+- https://stackoverflow.com/
+- https://developer.mozilla.org/en-US/
+- https://dev.to/codewithtee/server-side-rendering-ssr-vs-client-side-rendering-csr-3m24
+- https://developers.google.com/web/ilt/pwa/introduction-to-service-worker#:~:text=the%20Service%20Worker-,What%20is%20a%20service%20worker%3F,cache%2C%20and%20delivering%20push%20messages.
+- Docenten
+- Klasgenoten
+- 
+
+https://dev.to/codewithtee/server-side-rendering-ssr-vs-client-side-rendering-csr-3m24
