@@ -54,6 +54,5 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 - https://developers.google.com/web/ilt/pwa/introduction-to-service-worker#:~:text=the%20Service%20Worker-,What%20is%20a%20service%20worker%3F,cache%2C%20and%20delivering%20push%20messages.
 - Docenten
 - Klasgenoten
-- 
 
 https://dev.to/codewithtee/server-side-rendering-ssr-vs-client-side-rendering-csr-3m24
