@@ -36,6 +36,7 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 ![wirelaatste](https://user-images.githubusercontent.com/43068118/162408292-13383a78-3f94-4154-b511-0e1acb327be1.jpg)
 
 **Link to the wiki for more information**
+
 https://github.com/sietse333/progressive-web-apps-2122/wiki
 
 **Wishlist**
