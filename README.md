@@ -25,7 +25,9 @@ Change the API key to your own. You can request one from the Rijksmuseum website
 
 Run the application on localhost:3000 with npm run dev
 
+**Running as a web app**
 
+You can also run this project as a web application. In chrome in your searchbar there is a icon that starts the project as a webapp.
 
 **External data source?**
 
@@ -33,8 +35,7 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 
 **Activity diagram**
 
-![wireflows rembrand2e](https://user-images.githubusercontent.com/43068118/161923952-ce472945-de57-4f68-8512-34d68049c34e.jpg)
-
+![wirelaatste](https://user-images.githubusercontent.com/43068118/162408292-13383a78-3f94-4154-b511-0e1acb327be1.jpg)
 
 
 **Wishlist**
@@ -43,4 +44,14 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 - Improving images.
 - Adding more of my old javascript modules
 - Better overal styling on my page
+
+
+**Resources**
+- https://www.w3schools.com/
+- https://stackoverflow.com/
+- https://developer.mozilla.org/en-US/
+- https://dev.to/codewithtee/server-side-rendering-ssr-vs-client-side-rendering-csr-3m24
+- https://developers.google.com/web/ilt/pwa/introduction-to-service-worker#:~:text=the%20Service%20Worker-,What%20is%20a%20service%20worker%3F,cache%2C%20and%20delivering%20push%20messages.
+- Docenten
+- Klasgenoten
 
