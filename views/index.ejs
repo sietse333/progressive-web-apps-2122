@@ -1,0 +1,27 @@
+<%- include('./partial/head') -%>
+<body>
+    <main>
+        <h1>Discover Rijksmuseum</h1>
+        <p>Art from the comfort of your own home</p>
+        <form method="get" action="/search" search-form>
+            <input type="search" id="search" name="searchbalk" placeholder="Search for art or artists"/>
+        </form>
+        <p id="searchError"></p>
+        <section id="section">
+            <% 
+            data.map((kunst) => {
+                const img = kunst.webImage.url.slice(0, -3) + "=s1000"
+            %>
+            <a href="kunst/<%= kunst.id.substring(3) %>">
+                <article class="observed">
+                    <h2><%= kunst.title %></h2>
+                    <img src=" <%= img %>" alt="painting" >
+                </article>
+            </a>
+            <% 
+            }) 
+            %>
+        </section>
+    </main>
+</body>
+<%- include('./partial/foot.ejs') -%>
