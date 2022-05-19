@@ -1,4 +1,4 @@
-# Rijksmuseum
+# Rijksmuseum PWA
 
 **Description of project**
 
