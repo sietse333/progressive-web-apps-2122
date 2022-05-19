@@ -11,7 +11,7 @@ As an art lover, I want to be able to search and view art from the Rijksmuseum a
 ![offline](https://user-images.githubusercontent.com/43068118/161515230-cf140d80-1b45-43c8-8894-11cf9a83262e.png)
 
 
-**How to instal**
+**How to install**
 
 To run this program you need node en npm installed.
 
