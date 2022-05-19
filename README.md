@@ -1,10 +1,10 @@
 # Rijksmuseum PWA
 
-**Description of project**
+## Description of project
 
 This is a project i made for the Rijkssmuseum. It uses the API from Rijkssmuseum to display pieces of art online. People can type in searchcommands to see pieces they want to see. It now also uses a service worker that caches different information on the page so the page still works when you are offline. 
 
-**User story**
+## User story
 
 As an art lover, I want to be able to search and view art from the Rijksmuseum at home, so that I can still enjoy art during a lockdown Rijksmuseum - RijksData API
 
@@ -13,7 +13,7 @@ As an art lover, I want to be able to search and view art from the Rijksmuseum a
 ![offline](https://user-images.githubusercontent.com/43068118/161515230-cf140d80-1b45-43c8-8894-11cf9a83262e.png)
 
 
-**How to install**
+## How to install
 
 To run this program you need node en npm installed.
 
@@ -25,23 +25,23 @@ Change the API key to your own. You can request one from the Rijksmuseum website
 
 Run the application on localhost:3000 with npm run dev
 
-**Running as a web app**
+## Running as a web app
 
 You can also run this project as a web application. In chrome in your searchbar there is a icon that starts the project as a webapp.
 
-**External data source?**
+## External data source?
 
 I have used the Rijkssmuseum api. You can get it by creating a account on their website. Then you can request it and you get it in the mail. I use this api by
 
-**Activity diagram**
+## Activity diagram
 
 ![wirelaatste](https://user-images.githubusercontent.com/43068118/162408292-13383a78-3f94-4154-b511-0e1acb327be1.jpg)
 
-**Link to the wiki for more information**
+## Link to the wiki for more information
 
 https://github.com/sietse333/progressive-web-apps-2122/wiki
 
-**Wishlist**
+## Wishlist
 
 - Adding better error states and loading state
 - Improving images.
@@ -49,7 +49,7 @@ https://github.com/sietse333/progressive-web-apps-2122/wiki
 - Better overal styling on my page
 
 
-**Resources**
+## Resources
 - https://www.w3schools.com/
 - https://stackoverflow.com/
 - https://developer.mozilla.org/en-US/
