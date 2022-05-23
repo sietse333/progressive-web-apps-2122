@@ -41,6 +41,15 @@ I have used the Rijkssmuseum api. You can get it by creating a account on their 
 
 The service worker has a couple of CORE_ASSETS. I save my "offline" "style" and "manifest" into a cache which is named CORE_CACHE_ VERSION. It also saves the pages you have visited into a separate HTML cache. So when your internet switches off you can still use the page. However if you try to visit a page which you havent visited yet you will be forwarded to the offline page which shows you that your internet might not be working
 
+```
+const CORE_CACHE_VERSION = 'v1'
+const CORE_ASSETS = [
+  '/offline',
+  '/css/style.css',
+  'manifest.json'
+]
+```
+
 ## Critical rendering path / Optimizations
 
 Om de snelheid van mijn pagina heb ik meerdere dingen gedaan. Ik heb een Compression package en een minify package toegevoegd om mijn code kleiner te maken in size. Daarna begon ik met lighthouse tests te doen. De resultaten daarvan zie je hieronder.
