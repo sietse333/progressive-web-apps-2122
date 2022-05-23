@@ -1,6 +1,6 @@
 # Rijksmuseum PWA
 
-link: rijksmuseumserverside.herokuapp.com
+[link to app](rijksmuseumserverside.herokuapp.com)
 
 ## Description of project
 
