@@ -45,9 +45,9 @@ The service worker has a couple of CORE_ASSETS. I save my "offline" "style" and 
 
 Om de snelheid van mijn pagina heb ik meerdere dingen gedaan. Ik heb een Compression package en een minify package toegevoegd om mijn code kleiner te maken in size. Daarna begon ik met lighthouse tests te doen. De resultaten daarvan zie je hieronder.
 
-### Speed wafs
+### Speed wafs client side
 
-This is the speed of my original wafs project
+This is the speed of my original wafs project. There are no improvements made here at all.
 
 ![og wafs](https://user-images.githubusercontent.com/43068118/161925566-201151ac-ff80-47b6-825e-c78536127992.png)
 
