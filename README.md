@@ -54,7 +54,7 @@ This is the speed of my original wafs project. There are no improvements made he
 
 ### Speed progressive wafs
 
-After some improvements i learned in the lessons i got it down to 99. But i just scaled the images down to a few pixels so it was kind of cheating. However now i know it was the fault of my images. I also had some orange stats left that i wanted to take care of.
+After some improvements i learned in the lessons i got it down to 99. But i just scaled the images down to a few pixels so it was kind of cheating. I did this by mapping the images and then slicing ".slice(0, -3) + "=s500" after the url for example. The s500 is the amount of pixels the image has. However to make a real difference i had to set it too low. But atleast now i know it was the fault of my images. I also had some orange stats left that i wanted to take care of.
 
 ![snelheid voorbeeld](https://user-images.githubusercontent.com/43068118/161925688-66c0fb0b-025f-440c-a6d2-cbde44a0156f.png)
 
