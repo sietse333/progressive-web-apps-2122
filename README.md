@@ -1,7 +1,5 @@
 # Rijksmuseum PWA
 
-[link to app](rijksmuseumserverside.herokuapp.com)
-
 ## Description of project
 
 This is a project i made for the Rijkssmuseum. It uses the API from Rijkssmuseum to display pieces of art online. People can type in searchcommands to see pieces they want to see. It now also uses a service worker that caches different information on the page so the page still works when you are offline. 
